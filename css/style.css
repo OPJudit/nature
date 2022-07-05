@@ -1,0 +1,230 @@
+@font-face {
+    src: url(../font/LilitaOne-Regular.ttf);
+    font-family: Lilita;
+}
+
+@font-face {
+    src: url(../font/Poppins-SemiBold.ttf);
+    font-family: Poppins;
+}
+
+.content h2,.content h3 {
+    font-family: Poppins;
+    font-weight: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;  
+    background: #9cb535;
+}
+
+#natural {
+    background: #7b8d1d;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    color: #7b8d1d !important;
+}
+
+/*nav div a:hover, nav div a:focus {
+    color: #0f5132 !important;
+}*/
+
+nav ul li:first-child a:hover, nav ul li:first-child a:focus {
+    color: #7dae01;
+}
+
+.zoom {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    /*background-image: url(../img/bg1.jpg);*/    
+}
+
+#bg {    
+    background-size: cover;
+}
+
+.zoom:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 1000;
+    background: linear-gradient(transparent, #9cb535); /*elmosódás a kép és szöveg találkozásánál*/
+}
+
+.zoom #layer1 {
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.zoom #layer2 {
+    position: absolute;
+    right: 0;
+    width: 100%;    
+    z-index: 9;
+}
+
+.zoom #text {   
+    font-family: Lilita;    
+    position: absolute;   
+    left: 10%;
+    width: 100%;     
+    text-transform: uppercase;
+    font-size: 8.4vw;
+    color: #7dae01;           /*#7b8d1d;                /*#9fb81f;    */         
+    font-weight: bolder;
+    text-shadow: 9px 5px 3px #0f5132;
+    transform: translateY(60%);  
+}
+
+#curiosities a, #tours a {
+    color: white;
+    text-decoration: none;
+}
+
+.content {
+    padding: 70px;
+    box-sizing: border-box;        
+}
+
+.card {
+    background: #7b8d1d; 
+    padding: 10px;
+    margin-left: 20px;   
+}
+
+h2  {   
+    font-size: 4.5em;    
+}
+
+.content h3 {
+    font-size: 2.5em;
+}
+
+footer h3 {
+    color: #a11b34;  /*#9c1f36;*/
+}
+
+.content p {
+    font-family: Poppins;
+    font-size: 1.5em;
+}
+
+.card p {
+    font-family: Poppins;
+    font-size: 1.1em;
+}
+.btn, .card {
+    border-color: #0f5132;
+}
+
+.btn:hover, .btn:focus {
+    background-color: #7b8d1d;
+}
+
+#toTop {
+     border: 3px solid #0f5132; 
+     background: #7b8d1d !important;
+         
+}
+
+@media (max-width: 576px) {
+    .card {
+        display: flex;
+    }
+}
+
+@media (max-width: 767px) { /* mozgó hegyek elrejtése*/
+    .zoom #layer1, .zoom #layer2 {
+        display: block; /* nélküle nem működik az elrejtés*/
+        overflow: hidden;
+    }
+    
+    #walking div, #bicycle div, #rowing div {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 991px) {
+    h2 {
+        font-size: 40px;
+    }
+    
+    .content h3 {
+        font-size: 30px;
+    }
+    
+    .content p, .card p {
+        font-size: 18px;
+    }
+    
+    .content {
+        padding: 40px;
+    }
+    
+    .btn {
+        margin-bottom: 100px;
+    }
+    
+    #walking div, #bicycle div, #rowing div {
+        margin-bottom: 30px;
+    }    
+    
+    footer input {
+        display: block;
+        margin: 10px auto;
+    }
+    
+    footer .btn {
+        margin-bottom: 0;
+    }
+        
+    footer form+p {
+        margin-top: 30px;
+    }
+      
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    h2 {
+        font-size: 50px;
+    }
+    
+    .content h3 {
+        font-size: 40px;
+    }
+    
+    .content p, .card p {
+        font-size: 20px;
+    }
+    
+    .content {
+        padding: 40px;
+    }
+    
+    .zoom #text {
+        font-size: 6.3vw;
+        left: 16%;
+    }
+    
+    #walking div, #bicycle div, #rowing div {
+        margin-bottom: 30px;
+    }
+    
+    footer .btn {
+        margin-bottom: 0;
+    }
+    
+    footer form+p {
+        margin-top: 30px;
+    }
+}
+

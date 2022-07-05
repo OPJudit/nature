@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<!-- https://getbootstrap.com/     
+     https://bootstrap-extension.com/#
+     https://lokeshdhakar.com/projects/lightbox2/
+-->
+<html lang="hu">
+    <head>
+        <title>Természetjárók</title>
+        <meta charset="UTF-8">        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A természet kedvelőinek programajánlatok találhatók a honlapon.">
+        <meta name="author" content="Oláhné Percze Judit">
+        <link href="img/favicon3.jpg" rel="shortcut icon" type="image/x-icon">
+        <link href="bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="bootstrap-extension-5.0.0/css/bootstrap-extension.min.css" rel="stylesheet" type="text/css">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="lightbox2-2.11.3/dist/css/lightbox.min.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top py-0">
+            <div class="container-fluid">
+                <a class="navbar-brand text-uppercase px-3 py-0" id="natural" href="#"><h1 class="display-7 fw-normal mt-1 py-1">Természetjárók</h1></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-center" id="menu">
+                    <ul class="navbar-nav ms-5 me-auto mb-1 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-fresh fs-4" aria-current="page" href="turist.html">Úticélok</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fs-4" href="#hiker">Tájékoztató</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fs-4" href="#tours">Túrák</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fs-4" href="#curiosities">Érdekességek</a>
+                        </li>
+                    </ul>                   
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Kép -->
+        <section class="zoom"> 
+            <img src="img/bg1.jpg" id="bg" alt="lake">
+            <img src="img/mountain31.png" id="layer1" alt="montain1">
+            <img src="img/mountain32.png" id="layer2" alt="montain2">
+            <h1 id="text" class="d-none d-lg-block">Természetjárók</h1>
+        </section>
+        
+        <!-- A természet kedevelőinek tájékoztató -->
+        <section class="content" id="hiker">
+            <h2 class="text-center mb-4">A természet kedvelőinek</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque condimentum ligula eget faucibus dictum. Nulla facilisi. Nullam vitae felis massa. Nam eget ultrices ipsum, eu fermentum tellus. Praesent sed ligula nisl. Praesent at dapibus sapien, vitae imperdiet arcu. Nulla vehicula lacus at tortor ultrices, lobortis euismod ante sagittis. Curabitur quam tortor, tristique quis augue vitae, iaculis efficitur libero. Integer rutrum neque vel commodo volutpat. Duis non arcu nulla. Nam volutpat pulvinar libero. Quisque consequat odio nisi. Duis tincidunt urna metus, non consequat odio viverra at. Nam libero lacus, tincidunt in tristique eget, pretium non ante.<br><br>
+
+Nulla non mauris enim. Phasellus in malesuada ante, id porttitor elit. Vestibulum iaculis orci sed tortor volutpat, ultricies dapibus tellus ultricies. Sed iaculis justo non dui hendrerit laoreet non malesuada nunc. Fusce facilisis, nibh porttitor gravida congue, dui felis suscipit purus, eu faucibus diam dolor id turpis. Praesent eu nibh ultricies, dictum neque ac, vestibulum nulla. Fusce eleifend dolor ut diam molestie pellentesque. Donec dapibus laoreet hendrerit. Cras sagittis placerat dolor. Maecenas eu sem mattis, volutpat erat sit amet, condimentum urna. Ut semper velit vitae scelerisque volutpat. Praesent ut sem id orci tristique egestas. Morbi quis quam scelerisque, tempus risus at, luctus sem.<br><br>
+
+Donec elementum odio quis venenatis suscipit. Aliquam laoreet vestibulum mi, in porttitor ligula blandit eget. Vivamus libero erat, lacinia posuere luctus nec, interdum at ex. Maecenas maximus fermentum velit, at fermentum felis commodo a. Duis hendrerit massa velit, et auctor risus fermentum sed. Cras eros massa, eleifend nec fringilla at, mattis porta turpis. In sit amet mattis eros. Pellentesque vel ante erat.<br><br>       
+            Nunc vitae nulla risus. Pellentesque justo ipsum, porta a lobortis nec, dapibus in quam. Etiam sollicitudin, massa id lobortis venenatis, nisl tellus convallis lacus, et pellentesque risus purus nec purus. Phasellus sodales sem eu cursus mattis. Donec maximus, ex cursus tincidunt iaculis, orci quam consectetur metus, eu vulputate sapien ante sed enim. Donec id diam tristique, ullamcorper ante semper, facilisis dui. Donec est velit, porttitor sit amet sagittis sed, faucibus faucibus nulla. Quisque bibendum nulla arcu. Nam tincidunt risus a odio interdum, porttitor dapibus nibh porta. Proin fermentum ex non ultricies lobortis.</p>            
+        </section>
+        
+        <!-- Országos túrák -->
+        <section class="content container-fluid" id="tours">
+            <div class="container">
+                <h2 class="text-center mb-2">Országos túrák</h2>
+                <div class="row d-flex justify-content-between">
+                    <article class="col-12 col-lg-4">
+                        <h3 class="text-start mt-3">Gyalogtúra</h3>
+                        <div class="hover-zoom">
+                            <img src="img/gyalogos.jpg" alt="Gyalogos túrázók">
+                        </div>
+                        <p class="mt-3">Fusce dapibus volutpat malesuada. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer nec quam risus. Nullam elementum cursus pharetra. Ut aliquet pulvinar nunc sit amet maximus. Sed a purus at magna condimentum tincidunt.</p>
+                        <div class="text-center">
+                            <button type="button" class="btn text-white fs-4 border-2 m-3"><a href="turist.html#walking">Részletek</a>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
+                                </svg>
+                            </button>
+                        </div>                        
+                    </article>
+                    <article class="col-12 col-lg-4">
+                        <h3 class="text-start mt-3">Kerékpártúra</h3>
+                        <div class="hover-zoom">
+                            <img src="img/kerekpar.jpg" alt="Kerékpárosok az erdőben">                            
+                        </div>
+                        <p class="mt-3">Pellentesque in vehicula diam. Quisque sollicitudin ex at nisl maximus aliquet. Maecenas dignissim lobortis dolor vel pellentesque. Integer sollicitudin, nisl condimentum sagittis volutpat, orci dolor sagittis libero, eu facilisis elit nibh vitae purus.</p>
+                        <div class="text-center">
+                            <button type="button" class="btn text-white fs-4 border-2 m-3"><a href="turist.html#bicycle">Részletek</a>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
+                                </svg>
+                            </button>
+                        </div>                        
+                    </article>
+                    <article class="col-12 col-lg-4">
+                        <h3 class="text-start mt-3">Evezős túra</h3>
+                        <div class="hover-zoom">
+                            <img src="img/evezo.jpg" alt="Kajakozók a folyón">
+                        </div>
+                        <p class="mt-3">Vivamus volutpat mattis ante, sed tristique mauris lacinia sit amet. Donec tincidunt sem eget dignissim varius. Sed dapibus orci non fringilla maximus. Ut sem nisi, vehicula ut porta nec, auctor ac nisi. Nulla sagittis pellentesque hendrerit. Aliquam erat volutpat.</p>
+                        <div class="text-center">
+                            <button type="button" class="btn text-white fs-4 border-2 m-3" id="text"><a href="turist.html#rowing">Részletek</a>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
+                                </svg>
+                            </button>
+                        </div>                        
+                    </article>
+                </div>            
+            </div>
+        </section>
+        
+        <!-- Érdekességek -->
+        <section class="content container-fluid" id="curiosities">
+            <div class="container">
+                <h2 class="text-center mb-2">Érdekességek</h2>
+                <div class="row d-flex justify-content-between">
+                    <article class="col-12 col-lg-4">
+                        <h3 class="text-start mt-3">Év fája a nagylevelű hárs</h3>
+                        <div class="col-md hover-color">
+                            <img src="img/nagylevelu_hars .jpg" alt="Nagylevelű hársfa">
+                        </div>
+                        <p class="mt-3">Fusce dapibus volutpat malesuada. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer nec quam risus. Nullam elementum cursus pharetra. Ut aliquet pulvinar nunc sit amet maximus. Sed a purus at magna condimentum tincidunt.</p>
+                        <div class="text-center">
+                            <button type="button" class="btn text-white fs-4 border-2 m-3"><a href="https://ng.24.hu/termeszet/2022/01/01/2022-ben-az-ev-faja-a-nagylevelu-hars/" target="_blank">Részletek</a>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
+                                </svg>
+                            </button>
+                        </div>                        
+                    </article>
+                    <article class="col-12 col-lg-4">
+                        <h3 class="text-start mt-3">Év madara a zöld küllő</h3>
+                        <div class="col-md hover-color">
+                            <img src="img/zold_kullo1.jpg" alt="Zöld küllő madár">
+                        </div>
+                        <p class="mt-3">Pellentesque in vehicula diam. Quisque sollicitudin ex at nisl maximus aliquet. Maecenas dignissim lobortis dolor vel pellentesque. Integer sollicitudin, nisl condimentum sagittis volutpat, orci dolor sagittis libero, eu facilisis elit nibh vitae purus.</p>
+                        <div class="text-center">
+                            <button type="button" class="btn text-white fs-4 border-2 m-3"><a href="https://ng.24.hu/termeszet/2022/01/04/2022-ben-az-ev-madara-a-zold-kullo/" target="_blank">Részletek</a>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
+                                </svg>
+                            </button>
+                        </div>                        
+                    </article>
+                    <article class="col-12 col-lg-4">
+                        <h3 class="text-start mt-3">Év hala a bodorka</h3>
+                        <div class="col-md hover-color">
+                            <img src="img/bodorka.jpg" alt="Bodorka hal">
+                        </div>
+                        <p class="mt-3">Vivamus volutpat mattis ante, sed tristique mauris lacinia sit amet. Donec tincidunt sem eget dignissim varius. Sed dapibus orci non fringilla maximus. Ut sem nisi, vehicula ut porta nec, auctor ac nisi. Nulla sagittis pellentesque hendrerit. Aliquam erat volutpat.</p>
+                        <div class="text-center">
+                            <button type="button" class="btn text-white fs-4 border-2 m-3" id="text"><a href="https://ng.24.hu/termeszet/2022/01/02/2022-ev-hala-a-bodorka/" target="_blank">Részletek</a>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
+                                </svg>
+                            </button>
+                        </div>                        
+                    </article>
+                </div>            
+            </div>
+        </section>
+         <footer class="container-fluid bg-black">
+               <div class="container py-3 text-center">
+                   <h3 class="text-uppercase pt-2">Feliratkozás hírlevélre</h3>
+                   <p class="text-white">Nevének és e-mail címének megadásával elsők között értesülhet<br>híreinkről és a legújabb úticélokról.</p>
+                   <form method="post">
+                       <input type="text" name="nev" placeholder="Az Ön neve" required>
+                       <input type="email" name="email" placeholder="E-mail címe" required>
+                       <input type="hidden" name="event" value="feliratkozás">
+                       <button class="btn text-cream">Feliratkozom</button>                 
+                   </form>
+                   <p class="text-white py-2">Természetjárók &copy; - 2022</p>
+              </div> 
+           </footer>       
+        
+         <!-- toTop -->
+        <div class="d-none d-md-block">
+            <div class="text-white me-5 mb-5 p-3 rounded-circle" id="toTop"></div>
+        </div> 
+        
+        <script src="bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+        <script src="bootstrap-extension-5.0.0/js/bootstrap-extension.min.js"></script>
+        <script src="lightbox2-2.11.3/dist/js/lightbox-plus-jquery.min.js"></script>
+        <script src="js/animation.js"></script>
+    </body>
+</html>
+
