@@ -40,7 +40,7 @@ nav ul li:first-child a:hover, nav ul li:first-child a:focus {
     height: 100%;
     position: relative;
     overflow: hidden;
-    /*background-image: url(../img/bg1.jpg);*/    
+     
 }
 
 #bg {    
@@ -54,7 +54,7 @@ nav ul li:first-child a:hover, nav ul li:first-child a:focus {
     width: 100%;
     height: 100px;
     z-index: 1000;
-    background: linear-gradient(transparent, #9cb535); /*elmosódás a kép és szöveg találkozásánál*/
+    background: linear-gradient(transparent, #9cb535);
 }
 
 .zoom #layer1 {
@@ -79,7 +79,7 @@ nav ul li:first-child a:hover, nav ul li:first-child a:focus {
     width: 100%;     
     text-transform: uppercase;
     font-size: 8.4vw;
-    color: #7dae01;           /*#7b8d1d;                /*#9fb81f;    */         
+    color: #7dae01;                 
     font-weight: bolder;
     text-shadow: 9px 5px 3px #0f5132;
     transform: translateY(60%);  
@@ -110,7 +110,7 @@ h2  {
 }
 
 footer h3 {
-    color: #a11b34;  /*#9c1f36;*/
+    color: #a11b34;  
 }
 
 .content p {
@@ -142,9 +142,9 @@ footer h3 {
     }
 }
 
-@media (max-width: 767px) { /* mozgó hegyek elrejtése*/
+@media (max-width: 767px) { 
     .zoom #layer1, .zoom #layer2 {
-        display: block; /* nélküle nem működik az elrejtés*/
+        display: block; 
         overflow: hidden;
     }
     
