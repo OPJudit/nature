@@ -27,10 +27,6 @@ nav ul li a:hover, nav ul li a:focus {
     color: #7b8d1d !important;
 }
 
-/*nav div a:hover, nav div a:focus {
-    color: #0f5132 !important;
-}*/
-
 nav ul li:first-child a:hover, nav ul li:first-child a:focus {
     color: #7dae01;
 }
@@ -39,8 +35,7 @@ nav ul li:first-child a:hover, nav ul li:first-child a:focus {
     width: 100%;
     height: 100%;
     position: relative;
-    overflow: hidden;
-     
+    overflow: hidden;     
 }
 
 #bg {    
@@ -132,8 +127,7 @@ footer h3 {
 
 #toTop {
      border: 3px solid #0f5132; 
-     background: #7b8d1d !important;
-         
+     background: #7b8d1d !important;         
 }
 
 @media (max-width: 576px) {
